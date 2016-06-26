@@ -1,0 +1,15 @@
+mixin otherMess(message, time)
+    li.other
+        .avatar 
+            img(src="/images/DY6gND0.png")
+        .msg 
+            p= message
+            time= time
+        
+mixin selfMess(message, time)
+    li.self
+        .avatar 
+            img(src="/images/HYcn9xO.png")
+        .msg 
+            p= message
+            time= time

@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title= Chatroom
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700')
+    link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    script(src='/javascripts/jquery.min.js')
+    script(src='/javascripts/moment.js')
+    script(src='/javascripts/socket.io-1.4.5.js')
+    
+  body
+    include ./includes/mixins.jade
+    .menu
+        .back
+            i(class="fa fa-chevron-left")
+            img(src="/images/DY6gND0.png")
+        .name Name
+        .last 18:09
+    ol(class="chat")
+    form(id="message")
+        input(class="textarea", type="text", placeholder="Type here!", id="messageBody", autocomplete="off")
+        .emojis
+    script(src='/javascripts/client.js')
